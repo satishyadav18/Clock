@@ -453,8 +453,8 @@ body::before {
     
     #analog-clock{
         position: relative;
-        width: 130px;
-        height: 130px;
+        width: 90;
+        height: 90px;
 
         border-radius: 50%;
     }
