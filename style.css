@@ -449,7 +449,17 @@ body::before {
                 transform: rotate(360deg) scale(1.1);
             }
         }
-    
+    }
+
+    #clock-container {
+        /* height: auto;  */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        height: 130vh;
+    }
+
     
     #analog-clock{
         position: relative;
@@ -469,6 +479,8 @@ body::before {
         top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
         left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
     }
+
+    .c
 }
 
 
