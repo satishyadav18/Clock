@@ -351,7 +351,7 @@ body::before {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 10px;
+        bottom:0;
         background-image: url(image.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -377,7 +377,7 @@ body::before {
         justify-content: center;
         align-items: center;
         margin:0;
-        height: 125vh;
+        height: 128vh;
     }
 
     
@@ -391,9 +391,7 @@ body::before {
     #clock {
         font-size: 2rem; /* Smaller font size for better fit */
         text-align: center;
-        backdrop-filter: blur(0px);
-        background-color: rgba(0, 0, 0, 0.06);
-        margin-top: 48px;
+        margin-top: 100px;
     }
 
 
@@ -404,8 +402,8 @@ body::before {
         font-weight: bold;
         color: white;
         transform: translate(-50%, -50%);
-        top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
-        left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
+        top: calc(50% - 45px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 45px * sin(calc(var(--i) * 30deg)));
     }
 
 }  
@@ -424,7 +422,7 @@ body::before {
         body::before {
         content: "";
         position: fixed;
-        top: 20px;
+        top: 25px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -453,14 +451,14 @@ body::before {
         justify-content: center;
         align-items: center;
         margin:0;
-        height:125vh;
+        height:128vh;
     }
 
     
     #analog-clock{
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
     }
 
@@ -471,8 +469,8 @@ body::before {
         font-weight: bold;
         color: white;
         transform: translate(-50%, -50%);
-        top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
-        left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
+        top: calc(50% - 45px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 45px * sin(calc(var(--i) * 30deg)));
     }
 
     
