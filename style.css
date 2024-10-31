@@ -228,7 +228,7 @@ body::before {
         justify-content: center;
         align-items: center;
         height: 90vh;
-        margin-top: -20px; 
+        margin-top: -50px; 
     }
 
     #analog-clock {
