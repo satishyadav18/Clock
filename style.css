@@ -453,8 +453,9 @@ body::before {
     
     #analog-clock{
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
+
         border-radius: 50%;
     }
 
@@ -465,8 +466,8 @@ body::before {
         font-weight: 100;
         color: white;
         transform: translate(-50%, -50%);
-        top: calc(50% - 45px * cos(calc(var(--i) * 30deg))); 
-        left: calc(50% + 45px * sin(calc(var(--i) * 30deg)));
+        top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
     }
 }
 
@@ -475,8 +476,8 @@ body::before {
     
     #analog-clock{
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
     }
 
@@ -487,8 +488,8 @@ body::before {
         font-weight: 100;
         color: white;
         transform: translate(-50%, -50%);
-        top: calc(50% - 40px * cos(calc(var(--i) * 30deg))); 
-        left: calc(50% + 40px * sin(calc(var(--i) * 30deg)));
+        top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
     }
 }
 
