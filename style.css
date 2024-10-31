@@ -417,7 +417,7 @@ body::before {
 @media (max-width: 400px) {
 
     body {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         color: white;
         overflow: hidden;
         background-color: black;
