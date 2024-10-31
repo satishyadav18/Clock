@@ -422,7 +422,7 @@ body::before {
         overflow: hidden;
         background-color: black;
         position: relative;
-        }   
+    }   
     
         body::before {
         content: "";
@@ -438,18 +438,17 @@ body::before {
         background-attachment: fixed;
         animation: rotateBackground 60s linear infinite;
         z-index: -1; 
-        }
+    }
     
-        /* Animation to rotate the background */
-        @keyframes rotateBackground {
-            from {
-                transform: rotate(0deg) scale(1.1);
-            }
-            to {
-                transform: rotate(360deg) scale(1.1);
-            }
+    @keyframes rotateBackground {
+        from {
+            transform: rotate(0deg) scale(1.1);
+        }
+        to {
+            transform: rotate(360deg) scale(1.1);
         }
     }
+    
 
     #clock-container {
         /* height: auto;  */
@@ -457,7 +456,7 @@ body::before {
         justify-content: center;
         align-items: center;
         margin:0;
-        height: 130vh;
+        height: 120vh;
     }
 
     
@@ -480,7 +479,7 @@ body::before {
         left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
     }
 
-    .c
+    
 }
 
 
