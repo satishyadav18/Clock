@@ -456,7 +456,7 @@ body::before {
         justify-content: center;
         align-items: center;
         margin:0;
-        height: 120vh;
+        height: 123vh;
     }
 
     
@@ -464,14 +464,13 @@ body::before {
         position: relative;
         width: 100px;
         height: 100px;
-
         border-radius: 50%;
     }
 
     .number {
         position: absolute;
         font-family: Cambria;
-        font-size: 0.9;
+        font-size: 0.8rem;
         font-weight: bold;
         color: white;
         transform: translate(-50%, -50%);
@@ -484,7 +483,18 @@ body::before {
 
 
 @media (max-width: 330px) {
+
     
+    #clock-container {
+        /* height: auto;  */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        height: 123vh;
+    }
+
+
     #analog-clock{
         position: relative;
         width: 100px;
@@ -495,7 +505,7 @@ body::before {
     .number {
         position: absolute;
         font-family: Cambria;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: bold;
         color: white;
         transform: translate(-50%, -50%);
