@@ -462,8 +462,8 @@ body::before {
     
     #analog-clock{
         position: relative;
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
 
         border-radius: 50%;
     }
@@ -471,8 +471,8 @@ body::before {
     .number {
         position: absolute;
         font-family: Cambria;
-        font-size: 0.9rem;
-        font-weight: 100;
+        font-size: 0.9;
+        font-weight: bold;
         color: white;
         transform: translate(-50%, -50%);
         top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
@@ -487,8 +487,8 @@ body::before {
     
     #analog-clock{
         position: relative;
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
     }
 
@@ -496,7 +496,7 @@ body::before {
         position: absolute;
         font-family: Cambria;
         font-size: 0.9rem;
-        font-weight: 100;
+        font-weight: bold;
         color: white;
         transform: translate(-50%, -50%);
         top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
