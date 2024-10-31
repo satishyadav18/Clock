@@ -17,7 +17,7 @@ body::before {
     background-image: url(image.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     animation: rotateBackground 60s linear infinite;
     z-index: -1;
@@ -42,6 +42,7 @@ body::before {
     height: 100vh;
     position: relative;
     z-index: 1;
+    padding-bottom: 100px;
 }
 
 /* Digital Clock Styles */
@@ -175,7 +176,7 @@ body::before {
         background-position: center;
         background-size: contain; /* Ensures full coverage */
         background-repeat: no-repeat;
-        background-attachment: scroll; /* Allows background to scroll on mobile */
+        background-attachment: fixed; /* Allows background to scroll on mobile */
         animation: rotateBackground 60s linear infinite;
         z-index: -1; 
     }
@@ -188,6 +189,9 @@ body::before {
     #analog-clock {
         width: 90px;
         height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .number {
@@ -202,23 +206,19 @@ body::before {
     }
 }
 
-@media (max-width: 290) and (max-height: 620px) {
-    body{
-        margin-top: 80px;
-    }
-    
-    body::before {
+@media (max-width: 290) and (max-height: 700px) {
+        body::before {
         content: "";
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 50px;
         background-image: url(image.png);
         background-position: center;
         background-size: contain; /* Ensures full coverage */
         background-repeat: no-repeat;
-        background-attachment: scroll; /* Allows background to scroll on mobile */
+        background-attachment: fixed; /* Allows background to scroll on mobile */
         animation: rotateBackground 60s linear infinite;
         z-index: -1; 
     }
@@ -228,6 +228,7 @@ body::before {
         justify-content: center;
         align-items: center;
         height: 100vh;
+        margin-bottom: 100px;
     }
 
     #analog-clock {
