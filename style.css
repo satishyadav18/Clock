@@ -227,8 +227,8 @@ body::before {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 90vh;
-        margin-top: -50px; 
+        height: 100vh;
+        margin-top: -30px; 
     }
 
     #analog-clock {
@@ -304,7 +304,7 @@ body::before {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    /* margin-top: -50px;  */
+    margin-top: 40px; 
 }
 
 #analog-clock {
@@ -330,9 +330,9 @@ body::before {
 }
 
 .number {
-    font-size: 0.8rem;
-    top: calc(50% - 35px * cos(calc(var(--i) * 30deg))); 
-    left: calc(50% + 35px * sin(calc(var(--i) * 30deg)));
+    font-size: 0.7rem;
+    top: calc(50% + 40px * cos(calc(var(--i) * 30deg))); 
+    left: calc(50% + 40px * sin(calc(var(--i) * 30deg)));
 }
 
 .hour-hand {
@@ -348,7 +348,8 @@ body::before {
 }
 
 #clock {
-    font-size: 1.8rem;
-    margin-top: 80px; 
+    margin-top: -65px;
+    font-size: 1.4rem;
+    margin-top: 30px; 
 }
 }
