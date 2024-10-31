@@ -417,7 +417,7 @@ body::before {
 @media (max-width: 400px) {
 
     body {
-        margin-top: 20px;
+        margin-bottom: 20px;
         color: white;
         overflow: hidden;
         background-color: black;
@@ -435,7 +435,7 @@ body::before {
         background-position: center;
         background-repeat: no-repeat;
         background-size:contain;
-        background-attachment: relative;
+        background-attachment: fixed;
         animation: rotateBackground 60s linear infinite;
         z-index: -1; 
     }
