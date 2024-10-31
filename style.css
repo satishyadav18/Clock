@@ -465,48 +465,13 @@ body::before {
         font-weight: 100;
         color: white;
         transform: translate(-50%, -50%);
-        top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
-        left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
+        top: calc(50% - 45px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 45px * sin(calc(var(--i) * 30deg)));
     }
 }
 
 
 @media (max-width: 300px) {
-
-    body {
-        margin: 0;
-        color: white;
-        overflow: hidden;
-        background-color: black;
-        position: relative;
-        }   
-    
-        body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(image.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:contain;
-        background-attachment: fixed;
-        animation: rotateBackground 60s linear infinite;
-        z-index: -1; 
-        }
-    
-        /* Animation to rotate the background */
-        @keyframes rotateBackground {
-            from {
-                transform: rotate(0deg) scale(1.1);
-            }
-            to {
-                transform: rotate(360deg) scale(1.1);
-            }
-        }
-    
     
     #analog-clock{
         position: relative;
@@ -522,8 +487,8 @@ body::before {
         font-weight: 100;
         color: white;
         transform: translate(-50%, -50%);
-        top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
-        left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
+        top: calc(50% - 40px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 40px * sin(calc(var(--i) * 30deg)));
     }
 }
 
