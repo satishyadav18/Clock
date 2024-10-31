@@ -183,7 +183,7 @@ body::before {
 
 
     #clock-container {
-        height: 125vh;
+        height: 120vh;
     }
 
     #analog-clock {
@@ -213,9 +213,9 @@ body::before {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 50px;
+        bottom: 0;
         background-image: url(image.png);
-        background-position: center;
+        background-position: center 40px;
         background-size: contain; /* Ensures full coverage */
         background-repeat: no-repeat;
         background-attachment: fixed; /* Allows background to scroll on mobile */
