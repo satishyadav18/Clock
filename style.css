@@ -215,7 +215,7 @@ body::before {
         right: 0;
         bottom: 0;
         background-image: url(image.png);
-        background-position: center 40px;
+        background-position: center 35px;
         background-size: contain; /* Ensures full coverage */
         background-repeat: no-repeat;
         background-attachment: fixed; /* Allows background to scroll on mobile */
