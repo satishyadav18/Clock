@@ -425,7 +425,7 @@ body::before {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 10px;
+        bottom: 50px;
         background-image: url(image.png);
         background-position: center;
         background-repeat: no-repeat;
