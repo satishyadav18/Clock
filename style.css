@@ -34,9 +34,6 @@ body::before {
     }
 }
 
-
-
-
 #clock-container {
     display: flex;
     flex-direction: column;
@@ -183,7 +180,7 @@ body::before {
 
     #clock {
         font-family:Cambria;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: bold;
         text-align: center;
         backdrop-filter: blur(5px);
@@ -341,7 +338,7 @@ body::before {
 
 @media (max-width: 600px) {
     #clock {
-        font-size: 2rem; /* Smaller font size for better fit */
+        font-size: 1.8rem; /* Smaller font size for better fit */
         margin-top: 100px;
         text-align: center;
         backdrop-filter: blur(0px);
@@ -418,6 +415,41 @@ body::before {
 }    
 
 @media (max-width: 400px) {
+
+    body {
+        margin: 0;
+        color: white;
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+        }   
+    
+        body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(image.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-attachment: fixed;
+        animation: rotateBackground 60s linear infinite;
+        z-index: -1; 
+        }
+    
+        /* Animation to rotate the background */
+        @keyframes rotateBackground {
+            from {
+                transform: rotate(0deg) scale(1.1);
+            }
+            to {
+                transform: rotate(360deg) scale(1.1);
+            }
+        }
+    
     
     #analog-clock{
         position: relative;
