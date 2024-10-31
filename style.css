@@ -1,13 +1,41 @@
 
+
 body {
+    margin: 0;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}   
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url(image.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-attachment: fixed;
-    margin: 0;
-    color: white;
+    animation: rotateBackground 60s linear infinite;
+    z-index: -1; 
 }
+
+/* Animation to rotate the background */
+@keyframes rotateBackground {
+    from {
+        transform: rotate(0deg) scale(1.1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+
+
+
 
 #clock-container {
     display: flex;
@@ -15,6 +43,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 #clock {
@@ -33,16 +63,44 @@ body {
 #analog-clock {
     position: relative;
     width: 200px;
-    height: 200px; 
-    border: 5px solid rgba(255, 255, 255, 0.5);
+    height: 200px;
     border-radius: 50%;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(10px);
+    background-color: rgba(18, 18, 18, 0.5);
+
+   
+    border: 5px solid rgba(50, 50, 50, 0.7);
 }
+
+/* Dark rotating gradient border */
+#analog-clock::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    padding: 5px;
+    background: conic-gradient(#333, #222, #111, #333);
+    animation: darkRotateBorder 6s linear infinite;
+    z-index: -1;
+}
+
+@keyframes darkRotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 /* Numbers on the Clock Face */
 .number {
     position: absolute;
+    font-family: Cambria;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
@@ -90,4 +148,292 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+
+
+@media (max-width: 2600px) {
+    
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(image.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-attachment: fixed;
+        animation: rotateBackground 60s linear infinite;
+        z-index: -1; 
+    }
+ 
+    #clock-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+
+    #clock {
+        font-family:Cambria;
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.06);
+    
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    #analog-clock {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(18, 18, 18, 0.5);
+
+    
+        border: 5px solid rgba(50, 50, 50, 0.7);
+    }
+
+    #analog-clock::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border-radius: 50%;
+        padding: 5px;
+        background: conic-gradient(#333, #222, #111, #333);
+        animation: darkRotateBorder 6s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes darkRotateBorder {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .number {
+        position: absolute;
+        font-family: Cambria;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        transform: translate(-50%, -50%);
+        top: calc(50% - 90px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 90px * sin(calc(var(--i) * 30deg)));
+    }
+
+    .hand {
+        position: absolute;
+        width: 50%;
+        background-color: white;
+        transform-origin: 0 50%; 
+        top: 50%;
+        left: 50%;
+        transform: rotate(90deg); 
+        border-radius: 2px;
+         
+    }
+
+    .hour-hand {
+        height: 4px;
+        width: 32%;
+        background-color: #fff;
+    }
+
+    .minute-hand {
+        height: 3px;
+        width: 36%;
+        background-color: #bbb;
+    }
+
+    .second-hand {
+        height: 2px;
+        width: 40%;
+        background-color: #f00;
+    }
+
+    .center-point {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+} 
+
+
+@media (max-width: 1500px) {
+    
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(image.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-attachment: fixed;
+        animation: rotateBackground 60s linear infinite;
+        z-index: -1; 
+    }
+
+
+
+}
+
+
+
+@media (max-width: 780px) {
+    
+    #analog-clock{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .number {
+        position: absolute;
+        font-family: Cambria;
+        font-size: 1rem;
+        font-weight: 100;
+        color: white;
+        transform: translate(-50%, -50%);
+        top: calc(50% - 70px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 70px * sin(calc(var(--i) * 30deg)));
+    }
+
+    #clock {
+        font-size: 2rem; /* Smaller font size for better fit */
+        text-align: center;
+        backdrop-filter: blur(0px);
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+    #clock {
+        font-size: 2rem; /* Smaller font size for better fit */
+        margin-top: 100px;
+        text-align: center;
+        backdrop-filter: blur(0px);
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    #clock-container {
+        /* height: auto;  */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        height: 130vh;
+    }
+
+    #analog-clock{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(18, 18, 18, 0.5);
+
+   
+    border: 5px solid rgba(50, 50, 50, 0.7);
+    }
+
+    .number {
+        position: absolute;
+        font-family: Cambria;
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: white;
+        transform: translate(-50%, -50%);
+        top: calc(50% - 60px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 60px * sin(calc(var(--i) * 30deg)));
+    }
+    
+
+    body {
+    margin: 0;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    }   
+
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment: fixed;
+    animation: rotateBackground 60s linear infinite;
+    z-index: -1; 
+    }
+
+    /* Animation to rotate the background */
+    @keyframes rotateBackground {
+        from {
+            transform: rotate(0deg) scale(1.1);
+        }
+        to {
+            transform: rotate(360deg) scale(1.1);
+        }
+    }
+
+}    
+
+@media (max-width: 400px) {
+    
+    #analog-clock{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .number {
+        position: absolute;
+        font-family: Cambria;
+        font-size: 0.9rem;
+        font-weight: 100;
+        color: white;
+        transform: translate(-50%, -50%);
+        top: calc(50% - 50px * cos(calc(var(--i) * 30deg))); 
+        left: calc(50% + 50px * sin(calc(var(--i) * 30deg)));
+    }
 }
