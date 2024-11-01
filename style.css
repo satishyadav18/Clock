@@ -303,7 +303,7 @@ body::before {
 
     .number {
         font-size: 0.7rem;
-        top: calc(50% - 35px * cos(calc(var(--i) * 30deg))); 
+        top: calc(50% + 35px * cos(calc(var(--i) * 30deg))); 
         left: calc(50% + 35px * sin(calc(var(--i) * 30deg)));
     }
 
