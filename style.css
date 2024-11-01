@@ -279,7 +279,7 @@ body::before {
 }
 
 
-@media (max-height: 280px) {
+@media (max-height: 270) {
     body::before {
     content: "";
     position: fixed;
