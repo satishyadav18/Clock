@@ -340,7 +340,7 @@ body::before {
 }
 
 
-@media(max-height: 270px) {
+@media(max-height: 235px) {
 
     body::before {
         content: "";
