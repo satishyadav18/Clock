@@ -209,7 +209,7 @@ body::before {
 
 
 
-@media (max-width: 350px) and (max-height: 1800px) {
+@media (max-width: 450px) and (max-height: 1800px) {
 
     #clock-container {
         display: flex;
@@ -266,7 +266,7 @@ body::before {
 } 
 
 
-@media (max-width: 1600px) and (max-height: 270px) {
+@media (max-width: 1600px) and (max-height: 400px) {
     body::before {
     content: "";
     position: fixed;
@@ -339,7 +339,7 @@ body::before {
 }
 
 
-@media(max-height: 260px) {
+@media(max-height: 270px) {
 
     body::before {
         content: "";
