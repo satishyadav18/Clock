@@ -220,7 +220,7 @@ body::before {
     }
 
     #analog-clock {
-        margin-top: 10px;
+        margin-top: 5px;
         width: 90px;  
         height: 90px;
         border-radius: 50%;
