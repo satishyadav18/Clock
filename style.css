@@ -146,7 +146,7 @@ body::before {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 780px) {
+/* @media (max-width: 780px) {
     #analog-clock {
         width: 150px;
         height: 150px;
@@ -161,10 +161,10 @@ body::before {
     #clock {
         font-size: 2rem;
     }
-}
-
+} */
+   
 @media (max-width: 650px) {
-    
+ 
     body::before {
         content: "";
         position: fixed;
@@ -183,7 +183,7 @@ body::before {
 
 
     #clock-container {
-        height: 118vh;
+        height: 120vh;
     }
 
     #analog-clock {
@@ -192,7 +192,7 @@ body::before {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
 
     .number {
@@ -207,7 +207,7 @@ body::before {
     }
 }
 
-@media (max-width: 150px) and (max-height: 680px) {
+@media (max-width: 270px) and (max-height: 700px) {
         body::before {
         content: "";
         position: fixed;
@@ -228,7 +228,7 @@ body::before {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
         margin-top: -20px; 
     }
 
@@ -255,7 +255,7 @@ body::before {
     }
 
     .number {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         top: calc(50% - 35px * cos(calc(var(--i) * 30deg))); 
         left: calc(50% + 35px * sin(calc(var(--i) * 30deg)));
     }
