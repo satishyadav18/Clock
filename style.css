@@ -339,30 +339,7 @@ body::before {
 }
 
 
-
-@media (max-width: 270px) and (max-height: 1600px) {
-
-    body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image:none;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
-        animation: rotateBackground 60s linear infinite;
-        z-index: -1; 
-    }
-    
-
-}    
-
-
-@media(max-height: 265px) {
+@media(max-height: 260px) {
 
     body::before {
         content: "";
@@ -381,3 +358,24 @@ body::before {
     }
     
 }
+
+
+@media (max-width: 270px) {
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:none;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        animation: rotateBackground 60s linear infinite;
+        z-index: -1; 
+    } 
+
+}  
