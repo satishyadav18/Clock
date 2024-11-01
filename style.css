@@ -14,7 +14,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(image.png);
+    background-image: url(image2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -172,7 +172,7 @@ body::before {
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url(image.png);
+        background-image: url(image2.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -215,7 +215,7 @@ body::before {
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url(image.png);
+        background-image: url(image2.png);
         background-position: center 30px;
         background-size: contain; 
         background-repeat: no-repeat;
@@ -291,7 +291,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(image.png);
+    background-image: url(image2.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
