@@ -21,15 +21,16 @@ function updateClock() {
     const hourHand = document.querySelector(".hour-hand");
 
     //Angles for hands
-    const secondsAngle = ((seconds + 30) / 60) * 360;                             
-    const minutesAngle = ((minutes + 30) / 60) * 360 + (seconds / 60) * 6;      
+    const secondsAngle = (seconds / 60) * 360;                             
+    const minutesAngle = (minutes / 60) * 360 + (seconds / 60) * 6;      
     const hoursAngle = (now.getHours() % 12) * 30 + (now.getMinutes() / 60) * 30;
 
     //Apply angles to the hands
-    secondHand.style.transform = `rotate(${secondsAngle + 90}deg)`;
-    minuteHand.style.transform = `rotate(${minutesAngle + 90}deg)`;
+    secondHand.style.transform = `rotate(${secondsAngle - 90}deg)`;
+    minuteHand.style.transform = `rotate(${minutesAngle - 90}deg)`;
     hourHand.style.transform = `rotate(${hoursAngle - 90}deg)`;
-}
+    
+}   
 
 //Initial call and update every second
 updateClock();
