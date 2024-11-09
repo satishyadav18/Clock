@@ -267,7 +267,7 @@ body::before {
 } 
 
 
-@media (max-width: 1600px) and (max-height: 400px) {
+@media (max-width: 3600px) and (max-height: 400px) {
     body::before {
     content: "";
     position: fixed;
